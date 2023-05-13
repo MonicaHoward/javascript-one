@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Data Types, User Input, Conditional Logic
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var userName = prompt("What's your name?");
+      var confirmState = confirm("Are you from Washington?");
+
+      var stateName = "Washington";
+      var cityName = "Bellevue";
+      var yourAge = 25;
+      var isMale = true;
+
+      if (confirmState) {
+        alert("You're from " + stateName);
+      }
+      else {
+        alert("You're not from " + stateName);
+      }
+
+      if (isMale) {
+        alert("G'day, sir");
+      }
+      else {
+        alert("G'day, ma'am");
+      }
+
+      if (yourAge !== 21) {
+        alert("You're not 21 years old");
+      }
+
+      if (yourAge === 25) {
+        alert("You're the same age as Kylie Jenner");
+      }
+      else if (yourAge < 25) {
+        alert("You're younger than Kylie Jenner");
+      }
+      else if (yourAge > 25) {
+        alert("You're older than Kylie Jenner");
+      }
+
+      // document.write() overwrites the entire page. We don't normally use this, but we will today for simplicity
+      document.write("Welcome to our page " + userName);
+
+      var yourAge = prompt("How old are you?");
+
+      // Won't work as expected
+      alert(yourAge + 2);
+
+      // Works as expected
+      alert(parseInt(yourAge) + 2);
+
+    </script>
+  </body>
+</html>
